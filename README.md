@@ -1,6 +1,6 @@
 # subversion
 
-Use alpine base image, apk add subversion version 1.9.4, mount / data / docker / subversion corresponding container / data / docker / svn, you can refer to initialization.sh script
+Use alpine base image, apk add subversion version 1.9.4, mount /data/docker/subversion corresponding container /data/docker/svn/, you can refer to initialization.sh script
 
 * install 
 
