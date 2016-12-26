@@ -6,7 +6,7 @@
 # Version:
 # Created Time: 2016年12月26日 星期一 14时03分46秒
 #########################################################################
-SPA=/data/docker/svn
+SPA=/data/docker/svn/conf
 if [ "$(ls -A $SPA)" ];then
   svnserver -d -r /data/docker/svn
   tail -f $SPA/passwd
