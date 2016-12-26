@@ -1,9 +1,9 @@
 version: '2'
 services:
-  SVN1.9.4:
+  svb1.9.4:
     build:
         context: https://raw.githubusercontent.com/LinuxEA-Mark/docker-subversion1.9.4/master/Dockerfile
-    #container_name: mariadb
+    container_name: svn
     restart: always
     network_mode: "host"
     volumes:
