@@ -19,4 +19,5 @@ else
 	sed -i  's/# authz-db = authz/authz-db = authz/g' $SPA/conf/svnserve.conf
 	echo linuxea=mark >> $SPA/conf/passwd
 	curl -Lks4  https://raw.githubusercontent.com/LinuxEA-Mark/docker-subversion1.9.4/master/authz >> $SPA/conf/authz
+	tail -f /etc/passwd
 fi
