@@ -8,8 +8,8 @@
 #########################################################################
 SPA=/data/docker/svn/conf
 if [ "$(ls -A $SPA)" ];then
-  svnserver -d -r /data/docker/svn
+  /usr/bin/svnserve -d -r /data/docker/svn
   tail -f /etc/passwd
 else
-  cp -ra /tmp/* $SPA/ && svnserver -d -r /data/docker/svn && tail -f /etc/passwd
+  cp -ra /tmp/* $SPA/ &&  /usr/bin/svnserve -d -r /data/docker/svn && tail -f /etc/passwd
 fi
