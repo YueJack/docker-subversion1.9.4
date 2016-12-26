@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #########################################################################
 # File Name: initialization.sh
 # Author: mark www.linuxea.com
