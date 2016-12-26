@@ -11,5 +11,5 @@ if [ "$(ls -A $SPA)" ];then
   svnserver -d -r /data/docker/svn
   tail -f /etc/passwd
 else
-  mv /tmp/* $SPA/ && svnserver -d -r /data/docker/svn && tail -f /etc/passwd
+  cp -ra /tmp/* $SPA/ && svnserver -d -r /data/docker/svn && tail -f /etc/passwd
 fi
